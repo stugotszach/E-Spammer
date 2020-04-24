@@ -1,3 +1,4 @@
+![Travis Status](https://img.shields.io/travis/stugotszach/E-Spammer)
 
 # E-Spammer
 Spams a victims gmail account with a custom message
