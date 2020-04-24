@@ -1,2 +1,12 @@
 # E-Spammer
 Spams a victims gmail account with a custom message
+Make sure to enable less secure apps when creating the dummy account
+```bash
+##How to
+Go to your [Google Account](https://myaccount.google.com/)
+On the left navigation panel, click Security.
+On the bottom of the page, in the Less secure app access panel, click Turn on access.
+If you don't see this setting, your administrator might have turned off less secure app account access (check the instruction above).
+Click the Save button.
+~Source: https://hotter.io/docs/email-accounts/secure-app-gmail/
+```
