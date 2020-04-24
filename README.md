@@ -1,4 +1,4 @@
-
+![GitHub repo size](https://img.shields.io/github/repo-size/stugotszach/E-Spammer?color=red&style=social)
 
 # E-Spammer
 Spams a victims gmail account with a custom message
