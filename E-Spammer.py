@@ -46,4 +46,5 @@ server.login(gmail,password)
 for i in range(int(total)):
     server.sendmail(gmail,victim,message)
 server.quit()
-
+print("Sent!")
+sleep(2)
