@@ -1,4 +1,4 @@
-/github/size/:user/:repo/:path*
+https://img.shields.io/bundlephobia/min/react?color=red&style=plastic
 # E-Spammer
 Spams a victims gmail account with a custom message
 
