@@ -1,4 +1,4 @@
-.. image:: https://img.shields.io/bundlephobia/min/react?color=red&style=plastic   :alt: npm bundle size
+<img alt="npm bundle size" src="https://img.shields.io/bundlephobia/min/react?color=red&style=plastic">
 # E-Spammer
 Spams a victims gmail account with a custom message
 
