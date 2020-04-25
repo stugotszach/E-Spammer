@@ -10,6 +10,10 @@ def banner():
     print("███████╗    ███████║██║     ██║  ██║██║ ╚═╝ ██║██║ ╚═╝ ██║███████╗██║  ██║")
     print("╚══════╝    ╚══════╝╚═╝     ╚═╝  ╚═╝╚═╝     ╚═╝╚═╝     ╚═╝╚══════╝╚═╝  ╚═╝")
 ##CODE##
+if platform == "linux" or platform == "linux2":
+    os.system('clear')
+elif platform == "win32":
+    os.system('cls')
 server = smtplib.SMTP('smtp.gmail.com',587)
 server.starttls()
 port = 587
