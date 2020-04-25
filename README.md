@@ -18,3 +18,6 @@ Click the Save button.
 git clone https://github.com/stugotszach/E-Spammer
 cd E-Spammer
 python3 E-Spammer.py
+
+## USAGE
+any improper use of this tool is not my fault.
