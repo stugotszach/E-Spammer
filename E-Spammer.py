@@ -20,7 +20,7 @@ port = 587
 banner()
 print("                          ~~~~USE A DUMMY GMAIL~~~~")
 print("              ~~~~MAKE SURE TO ALSO TURN ON LESS SECURE APPS!~~~~")
-print("                         ~~~~Made By StugotsZach~~~~
+print("                         ~~~~Made By StugotsZach~~~~")
 print("Your Gmail Address: ")
 gmail = input("")
 
