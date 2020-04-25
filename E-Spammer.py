@@ -50,6 +50,6 @@ server.login(gmail,password)
 for i in range(int(total)):
     server.sendmail(gmail,victim,message)
 server.quit()
-print("Sent " + total + " E-Mails to: " + vitcim)
+print("Sent E-mails to: " + victim)
 sleep(2)
 exit()
