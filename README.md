@@ -13,10 +13,10 @@ If you don't see this setting, your administrator might have turned off less sec
 Click the Save button.
 ~Source: https://hotter.io/docs/email-accounts/secure-app-gmail/
 ```
+* any improper use of this tool is not my fault
 ## Installation of tool
 ```bash
 git clone https://github.com/stugotszach/E-Spammer
 cd E-Spammer
 python3 E-Spammer.py
-## USAGE
-any improper use of this tool is not my fault.
+
