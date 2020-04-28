@@ -1,3 +1,4 @@
+#MADE BY STUGOTSZACH
 import smtplib, time, os, sys
 from time import sleep
 from sys import platform
@@ -57,3 +58,4 @@ for i in range(int(total)):
 server.quit()
 print("Sent!")
 sleep(2)
+#ZACH IS COOL
