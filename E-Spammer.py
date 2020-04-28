@@ -1,14 +1,24 @@
 import smtplib, time, os, sys
 from time import sleep
 from sys import platform
+##COLORS##
+def prYellow(skk): print("\033[93m {}\033[00m" .format(skk))
+def prPurple(skk): print("\033[95m {}\033[00m" .format(skk))
+def prBlack(skk): print("\033[98m {}\033[00m" .format(skk))
+def prRed(skk): print("\033[91m {}\033[00m" .format(skk))
+underline='\033[04m'
+red='\033[31m'
+reset='\033[0m'
+redbg='\033[41m'
+
 ##BANNER##
 def banner():
-    print("███████╗    ███████╗██████╗  █████╗ ███╗   ███╗███╗   ███╗███████╗██████╗ ")
-    print("██╔════╝    ██╔════╝██╔══██╗██╔══██╗████╗ ████║████╗ ████║██╔════╝██╔══██╗")
-    print("█████╗█████╗███████╗██████╔╝███████║██╔████╔██║██╔████╔██║██████╗ ██████╔╝")
-    print("██╔══╝╚════╝╚════██║██╔═══╝ ██╔══██║██║╚██╔╝██║██║╚██╔╝██║██╔═══╝ ██╔══██╗")
-    print("███████╗    ███████║██║     ██║  ██║██║ ╚═╝ ██║██║ ╚═╝ ██║███████╗██║  ██║")
-    print("╚══════╝    ╚══════╝╚═╝     ╚═╝  ╚═╝╚═╝     ╚═╝╚═╝     ╚═╝╚══════╝╚═╝  ╚═╝")
+    prRed("███████╗    ███████╗██████╗  █████╗ ███╗   ███╗███╗   ███╗███████╗██████╗ ")
+    prRed("██╔════╝    ██╔════╝██╔══██╗██╔══██╗████╗ ████║████╗ ████║██╔════╝██╔══██╗")
+    prRed("█████╗█████╗███████╗██████╔╝███████║██╔████╔██║██╔████╔██║██████╗ ██████╔╝")
+    prRed("██╔══╝╚════╝╚════██║██╔═══╝ ██╔══██║██║╚██╔╝██║██║╚██╔╝██║██╔═══╝ ██╔══██╗")
+    prRed("███████╗    ███████║██║     ██║  ██║██║ ╚═╝ ██║██║ ╚═╝ ██║███████╗██║  ██║")
+    prRed("╚══════╝    ╚══════╝╚═╝     ╚═╝  ╚═╝╚═╝     ╚═╝╚═╝     ╚═╝╚══════╝╚═╝  ╚═╝")
 ##CODE##
 if platform == "linux" or platform == "linux2":
     os.system('clear')
@@ -20,25 +30,19 @@ port = 587
 banner()
 print("                          ~~~~USE A DUMMY GMAIL~~~~")
 print("              ~~~~MAKE SURE TO ALSO TURN ON LESS SECURE APPS!~~~~")
-print("                         ~~~~Made By StugotsZach~~~~")
 print("Your Gmail Address: ")
-gmail = input("")
+gmail = input(red + "")
 
-print("Password: ")
-password = input("")
+print(reset + "Password: ")
+password = input(red + redbg + "")
 
-if platform == "linux" or platform == "linux2":
-    os.system('clear')
-elif platform == "win32":
-    os.system('cls')
-banner()
-print("Victims Gmail: ")
-victim = input("")
+print(reset + reset + "Victims Gmail: ")
+victim = input(red + "")
 
-print("Message: ")
-message = input("")
+print(reset + "Message: ")
+message = input(red + "")
 
-print("Number of emails to send: ")
+print(reset + "Number of emails to send: ")
 total = int(input(""))
 
 if platform == "linux" or platform == "linux2":
@@ -51,6 +55,5 @@ server.login(gmail,password)
 for i in range(int(total)):
     server.sendmail(gmail,victim,message)
 server.quit()
-print("Sent E-mails to: " + victim)
+print("Sent!")
 sleep(2)
-exit()
