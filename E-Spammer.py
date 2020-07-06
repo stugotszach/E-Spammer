@@ -51,11 +51,20 @@ if platform == "linux" or platform == "linux2":
 elif platform == "win32":
     os.system('cls')
 
-server.login(gmail,password)
-
-for i in range(int(total)):
-    server.sendmail(gmail,victim,message)
-server.quit()
-print("Sent!")
-sleep(2)
+try:
+    server.login(gmail,password)
+    print("Sent messages to: " + victim)
+    for i in range(int(total)):
+        server.sendmail(gmail,victim,message)
+    server.quit()
+    print("Finished")
+    sleep(2)
+except KeyboardInterrupt:
+    print ('[-] Canceled')
+    sys.exit()
+    sleep(3)
+except smtplib.SMTPAuthenticationError:
+    print ('\n[!] There was an ERROR, have you tried turing on less secure apps?')
+    sys.exit()
+    sleep(3)
 #ZACH IS COOL
