@@ -64,7 +64,7 @@ except KeyboardInterrupt:
     sys.exit()
     sleep(3)
 except smtplib.SMTPAuthenticationError:
-    print ('\n[!] There was an ERROR, have you tried turing on less secure apps?')
+    print ('\n[!] There was an ERROR, have you tried turning on less secure apps?')
     sys.exit()
     sleep(3)
 #ZACH IS COOL
