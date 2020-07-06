@@ -10,7 +10,9 @@ First you want to go to your [Google Account](https://myaccount.google.com/)
 - On the bottom of the page, in the Less secure app access panel, click Turn on access.
 - If you don't see this setting, your administrator might have turned off less secure app account access (check the instruction above).
 - Click the Save button.
+
 [SOURCE](https://hotter.io/docs/email-accounts/secure-app-gmail/)
+
 <b>any improper use of this tool is not my fault</b>
 ## Installation of tool
 ```bash
