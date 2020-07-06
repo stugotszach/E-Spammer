@@ -53,7 +53,7 @@ elif platform == "win32":
 
 try:
     server.login(gmail,password)
-    print("Sent messages to: " + victim)
+    print("Sending messages to: " + victim)
     for i in range(int(total)):
         server.sendmail(gmail,victim,message)
     server.quit()
